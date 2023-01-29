@@ -1,5 +1,5 @@
 <template>
-  <div class="search-bar">
+  <div class="search-products">
     <input
       type="text"
       placeholder="Search"
@@ -42,7 +42,7 @@ import store from "@/store";
 const PAGE_SIZE = 5;
 
 export default defineComponent({
-  name: "SearchBar",
+  name: "SearchProducts",
   components: {
     PaginationItem,
   },
@@ -105,7 +105,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.search-bar {
+.search-products {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -113,7 +113,7 @@ export default defineComponent({
   margin: 0 auto;
 }
 
-.search-bar input[type="text"] {
+.search-products input[type="text"] {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -123,7 +123,7 @@ export default defineComponent({
   width: 70%;
 }
 
-.search-bar button {
+.search-products button {
   width: 25%;
   padding: 14px 20px;
   margin: 8px 0;
@@ -135,7 +135,7 @@ export default defineComponent({
   cursor: pointer;
 }
 
-.search-bar div {
+.search-products div {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -143,7 +143,7 @@ export default defineComponent({
   justify-content: center;
 }
 
-.search-bar div p {
+.search-products div p {
   width: 30%;
   margin: 8px;
   padding: 14px 20px;
